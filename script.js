@@ -58,7 +58,6 @@ rangeInput.addEventListener("input", (e) => {
 
 colorInput.addEventListener("change", (e) => {
   penColor = e.target.value;
-  console.log(penColor);
 });
 
 window.onload = makeGrid();

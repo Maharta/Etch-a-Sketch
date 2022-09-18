@@ -53,10 +53,33 @@ main {
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   user-select: none;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
+  padding: 1rem;
 }
 
 .grid {
   border: 1px solid rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 500px) {
+  .sketch__container {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sketch__container {
+    width: 450px;
+    height: 450px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
 }
