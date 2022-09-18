@@ -1,0 +1,42 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header,
+footer {
+  text-align: center;
+  height: 60px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.sketch__container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+}
+
+.grid {
+  border: 1px solid black;
+  padding: 1em;
+}
