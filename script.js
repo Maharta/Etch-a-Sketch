@@ -21,13 +21,13 @@ function makeGrid(gridNumber = 16) {
 }
 
 function paint(e) {
-  if (e.buttons === 1) {
+  console.log(e);
+  if (e.buttons === 1 || e.pointerId === 1) {
     this.style.backgroundColor = penColor;
   }
 }
-
 function erase(e) {
-  if (e.buttons === 1) {
+  if (e.buttons === 1 || e.pointerId === 1) {
     this.style.backgroundColor = "#ffffff";
   }
 }
